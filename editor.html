@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Song</title>
+    <script src="scripts/editor.js"></script>
+  </head>
+  <body>
+	<nav>
+		<a href="/index.html">All Songs</a>
+		<a href="/editor.html">Song Editor/Uploader</a>
+	</nav>
+    <h1 id="header">Add a Song:</h1>
+	<form id="add-song-form">
+		<div>
+			<label for="id">ID:</label>
+			<input type="text" id="id" disabled>
+		</div>
+		<div>
+			<label for="title">Title:</label>
+			<input type="text" id="title">
+		</div>
+		<div>
+			<label for="artist">Artist:</label>
+			<input type="text" id="artist">
+		</div>
+		<div>
+			<label for="released">Released:</label>
+			<input type="date" id="released">
+		</div>
+		<div>
+			<label for="popularity">Popularity</label>
+			<input type="number" id="popularity" min="1" max="10">
+		</div>
+		<div>
+			<label for="genre">Genre</label>
+			<input type="text" id="genre">
+		</div>
+		<div><input type="button" id="updateButton" value="Update Database"></div>
+		<div id="error"></div>
+	</form>
+    <ul id="song-output"></ul>
+  </body>
+</html>
