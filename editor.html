@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add a Song</title>
     <script src="scripts/editor.js"></script>
+	<script defer src="/scripts/auth.js"></script>
+	<script defer src="/scripts/init.js"></script>
   </head>
   <body>
 	<nav>
 		<a href="/index.html">All Songs</a>
-		<a href="/editor.html">Song Editor/Uploader</a>
+		<button id="logout" style="float: right;">Logout</button>
 	</nav>
     <h1 id="header">Add a Song:</h1>
 	<form id="add-song-form">

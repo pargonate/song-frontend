@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Song Frontend</title>
-    <script defer src="scripts/script.js"></script>
+    <title>Delete a Song</title>
+    <script src="scripts/delete.js"></script>
 	<script defer src="/scripts/auth.js"></script>
 	<script defer src="/scripts/init.js"></script>
   </head>
@@ -12,10 +12,12 @@
 	<nav>
 		<a href="/index.html">All Songs</a>
 		<a href="/editor.html">Song Editor/Uploader</a>
-		<a href="/delete.html">Delete a Song</a>
 		<button id="logout" style="float: right;">Logout</button>
 	</nav>
-    <h1>Uploaded Songs:</h1>
-    <ul id="song-output"></ul>
+    <form>
+		<select id="songDropdown"></select>
+		<input type="button" value="Delete" id="deleteButton">
+		<div id="error"></div>
+	</form>
   </body>
 </html>
